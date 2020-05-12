@@ -1,0 +1,57 @@
+
+@media only screen and (min-width: 769px){
+    *{
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font:400 14px Roboto, sans-serif;
+        background: #f0f0f5;
+        -webkit-font-smoothing: antialiased;
+    }
+    .container{
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    .cont-pt-baixo{
+        float:left;
+        width: 36%;
+        height: 270px;
+        background: #ff0009;
+        border-radius: 8px;
+        margin: 5% 7% 0 7%;
+    }
+    .cont-pt-alto{
+        float:left;
+        width: 36%;
+        height: 270px;
+        background: #ff0009;
+        border-radius: 8px;
+        margin: 5% 7% 0 7%;
+    }
+
+    .cont-bolsonaro-baixo{
+        float:left;
+        width: 36%;
+        height: 270px;
+        background: yellow;
+        border-radius: 8px;
+        margin: 5% 7% 0 7%;
+    }
+
+    .cont-bolsonaro-atual{
+        float:left;
+        width: 36%;
+        height: 270px;
+        background: yellow;
+        border-radius: 8px;
+        margin: 5% 7% 0 7%;
+    }
+
+
+}
