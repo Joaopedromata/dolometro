@@ -25,21 +25,11 @@ app.get('/', (req, res) => {
     })
 })
 
+const PORT = process.env.PORT || 3000
 
-app.listen(3000)
-
-
-/*
-const axios = require('axios')
-
-axios.get('https://api.hgbrasil.com/finance?array_limit=1&fields=only_results,currencies&key=762f83be').then((response) => {
-    
-    var dolar = response.data.currencies.USD.buy
-    var mostrardolar = ''
-    console.log(dolar)
+app.listen(PORT,() => {
+    console.log('Servidor rodando')
 })
-*/
-
 
 
 
