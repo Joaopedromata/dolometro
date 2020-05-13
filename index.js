@@ -18,7 +18,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.get('/', (req, res) => {
     const axios = require('axios')
     axios.get('https://api.hgbrasil.com/finance?array_limit=1&fields=only_results,currencies&key=762f83be').then((response) => {
-    const USD = response.data.currencies.USD.buy
+    const dollar = response.data.currencies.USD.buy
+    const USD = dollar.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+    console.log(dollar, USD)
     res.render('index', {USD: USD})
     })
 })
